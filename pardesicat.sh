@@ -7,7 +7,7 @@ echo "                                                 |"
 echo "--------------------------------------------------"
 
 echo "--------------------------------------------------"
-echo "  This is simple Bsh script written by Pardesicat "
+echo "  This is simple Bash script written by Pardesicat "
 echo "  To update and clean ur system single cmd        "
 echo "--------------------------------------------------"
 
