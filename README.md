@@ -1,5 +1,9 @@
 # LinuxUpdatescript
 
+
+![](https://cloud.pardesicat.xyz/s/86yCXsCLq8CFcjP/download/ssgit.png)
+
+
 a bash script writted by pardesi cat for easy update system
 
 
