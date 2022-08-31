@@ -9,7 +9,7 @@ To use this script  simply clone the git or download zip to clone
 
 
 
-`*git clone https://git.pardesicat.xyz/catboii/LinuxUpdatescript.git*`
+`git clone https://git.pardesicat.xyz/catboii/LinuxUpdatescript.git`
 
 
 `cd LinuxUpdatescript`
