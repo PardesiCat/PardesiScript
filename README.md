@@ -19,7 +19,7 @@ To use this script  simply clone the git or download zip to clone
 `cd LinuxUpdatescript`
 
 
-` bash LinuxUpdatescript.bash`
+` bash pardesicat.sh`
 
 
 > Note: SCipt will only work for debian based distros (mainly **apt** package managers)
