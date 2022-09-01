@@ -1,14 +1,14 @@
 #!/bin/bash/ 
 
-echo "--------------------------------------------------"
-echo "                                                 |"
-echo "           Namaste : $(whoami)                   |"
-echo "                                                 |"
+echo "---------------------------------------------------"
+echo "|                                                 |"
+echo "|           Namaste : $(whoami)                   |"
+echo "|                                                 |"
 echo "--------------------------------------------------"
 
 echo "--------------------------------------------------"
-echo "  This is simple Bash script written by Pardesicat "
-echo "  To update and clean ur system single cmd        "
+echo " This is simple Bash script written by Pardesicat "
+echo "    To update and clean ur system single cmd      "
 echo "--------------------------------------------------"
 
 
