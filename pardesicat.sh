@@ -6,16 +6,19 @@ echo "|           Namaste : $(whoami)                   |"
 echo "|                                                 |"
 echo "--------------------------------------------------"
 
+sleep 5
+
 echo "--------------------------------------------------"
 echo " This is simple Bash script written by Pardesicat "
 echo "    To update and clean ur system single cmd      "
 echo "--------------------------------------------------"
 
+sleep 5
 
 echo "starting.........................................."  
 
+sleep 5
 
-echo 
 
 echo -e "\e[1;32m Step 1: Updating packages \e[0m"
 sudo apt update
@@ -38,8 +41,12 @@ sudo apt clean -y
 sudo apt autoclean -y
 sudo apt autoremove -y
 
+sleep 5
+
 echo "--------------------------------------------------"
 echo "              : ....Done.... :                    "
 echo "--------------------------------------------------"
+
+sleep 5
 
 exit 
