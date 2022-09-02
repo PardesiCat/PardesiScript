@@ -2,7 +2,7 @@
 
 echo "---------------------------------------------------"
 echo "|                                                 |"
-echo "|           Namaste : $(whoami)                   |"
+echo "             Namaste : $(whoami)                   "
 echo "|                                                 |"
 echo "--------------------------------------------------"
 
@@ -14,10 +14,18 @@ echo "    To update and clean ur system single cmd      "
 echo "--------------------------------------------------"
 
 sleep 5
+echo "              checking Your system Info          "
+sleep 2
+echo "========================================================================"
+uname -a
+echo "========================================================================"
+sleep 5
+
+sleep 5
 
 echo "starting.........................................."  
 
-sleep 5
+sleep 2
 
 
 echo -e "\e[1;32m Step 1: Updating packages \e[0m"
