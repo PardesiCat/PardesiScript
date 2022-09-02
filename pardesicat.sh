@@ -6,7 +6,7 @@ echo "|           Namaste : $(whoami)                   |"
 echo "|                                                 |"
 echo "--------------------------------------------------"
 
-sleep 5
+sleep 2
 
 echo "--------------------------------------------------"
 echo " This is simple Bash script written by Pardesicat "
