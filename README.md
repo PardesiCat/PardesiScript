@@ -1,25 +1,28 @@
-# LinuxUpdatescript
+## Linux Update script
 
+A bash script writted by [Pardesi Cat ](https://pardesicat.xyz)for easy update/upgrade the linux system
 
-![](https://cloud.pardesicat.xyz/s/86yCXsCLq8CFcjP/download/ssgit.png)
+Linux Bash script for auto update in Debian Based distro + server
 
+ ## **To use this script  simply follow these steps**
 
-a bash script writted by pardesi cat for easy update system
+1. <u>Clone the update script from my selfhost git server</u>
 
+```copy 
+git clone https://git.pardesicat.xyz/pardesicat/PardesiScript.git
+```
 
-**Linux Bash script for auto update**
+2. <u>Goto that directory</u> 
 
-To use this script  simply clone the git or download zip to clone 
+```copy 
+cd PardesiScript
+```
 
+3. <u>Run the bash script</u>
 
+```copy 
+bash pardesicat.sh
+```
 
-`git clone https://git.pardesicat.xyz/catboii/LinuxUpdatescript.git`
-
-
-`cd LinuxUpdatescript`
-
-
-` bash pardesicat.sh`
-
-
-> Note: SCipt will only work for debian based distros (mainly **apt** package managers)
+> [!Attention] 
+> Script will only work for debian based distros (mainly with apt package managers)
