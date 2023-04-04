@@ -1,8 +1,13 @@
+#!writted by Pardesi_Cat
 #!/bin/bash/ 
+
+cat catboii
+
+sleep 5
 
 echo "---------------------------------------------------"
 echo "|                                                 |"
-echo "             Namaste : $(whoami)                   "
+echo "             Namaste : $(USERNAME)                 "
 echo "|                                                 |"
 echo "--------------------------------------------------"
 
@@ -52,7 +57,7 @@ sudo apt autoremove -y
 sleep 5
 
 echo "--------------------------------------------------"
-echo "              : ....Done.... :                    "
+echo "                ....Done....                      "
 echo "--------------------------------------------------"
 
 sleep 5
