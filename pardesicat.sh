@@ -1,9 +1,17 @@
 #!writted by Pardesi_Cat
 #!/bin/bash/ 
 
+APT="/usr/bin/apt"
+
+
 cat catboii
 
 sleep 5
+
+if [[ -v "$APT" ]] ; then
+     echo -e "your on debian type system with apt"
+     echo -e "starting"
+
 
 echo "-------------------------------------------------"
 echo "|                                                 |"
@@ -62,4 +70,12 @@ echo "--------------------------------------------------"
 
 sleep 5
 
-exit 
+exit
+
+else 
+	echo -e "your on other system"
+	echo -e "closing script"
+	exit 0
+
+
+ fi
