@@ -3,18 +3,28 @@
 
 APT="/usr/bin/apt"
 
+RED='\e[31m'
+BLUE='\e[34m'
+PURPLE='\e[35m'
+REDB='\e[1;31m'
+
+os () {
+    cat /etc/os-release
+}
+
+
 cat catboii
 
 sleep 5
 
 if [ -f "$APT" ] ; then
-     echo -e "your on debian type system with apt"
-     echo -e "starting"
+     echo -e "${BLUE}your on debian type system with apt"
+     echo -e "${BLUE}starting"
 
 
 echo "-------------------------------------------------"
 echo "|                                                 |"
-echo "             Namaste : $(whoami)                   "
+echo "             Namaste : ${PURPLE}$(whoami)          "
 echo "|                                                 |"
 echo "--------------------------------------------------"
 sleep 2
@@ -28,7 +38,7 @@ sleep 5
 echo "              checking Your system Info          "
 sleep 2
 echo "========================================================================"
-uname -a
+${PURPLE}uname -a
 echo "========================================================================"
 sleep 5
 
@@ -71,8 +81,11 @@ sleep 5
 exit
 
 else 
-	echo -e "your on other system"
-	echo -e "closing script"
+	echo -e "${PURPLE}your on other system"
+	echo -e "__________________________________"
+	os
+	echo -e "__________________________________"
+	echo -e "${REDB}closing script"
 	exit 0
 
 
