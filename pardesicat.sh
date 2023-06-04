@@ -1,11 +1,22 @@
+#!writted by Pardesi_Cat
 #!/bin/bash/ 
 
-echo "---------------------------------------------------"
+APT="/usr/bin/apt"
+
+cat catboii
+
+sleep 5
+
+if [ -f "$APT" ] ; then
+     echo -e "your on debian type system with apt"
+     echo -e "starting"
+
+
+echo "-------------------------------------------------"
 echo "|                                                 |"
 echo "             Namaste : $(whoami)                   "
 echo "|                                                 |"
 echo "--------------------------------------------------"
-
 sleep 2
 
 echo "--------------------------------------------------"
@@ -29,7 +40,7 @@ sleep 2
 
 
 echo -e "\e[1;32m Step 1: Updating packages \e[0m"
-sudo apt update
+sudo apt update -y
 
 echo
 
@@ -52,9 +63,17 @@ sudo apt autoremove -y
 sleep 5
 
 echo "--------------------------------------------------"
-echo "              : ....Done.... :                    "
+echo "                ....Done....                      "
 echo "--------------------------------------------------"
 
 sleep 5
 
-exit 
+exit
+
+else 
+	echo -e "your on other system"
+	echo -e "closing script"
+	exit 0
+
+
+ fi
