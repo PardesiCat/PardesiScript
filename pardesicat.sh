@@ -18,7 +18,7 @@ cat catboii
 sleep 5
 
 if [ -f "$APT" ] ; then
-     echo -e "${BLUE}you are on debian type system with apt"
+     echo -e "${BLUE}you're on debian type system with apt"
      echo -e "${BLUE}starting"
 
 
