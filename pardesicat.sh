@@ -3,12 +3,11 @@
 
 APT="/usr/bin/apt"
 
-
 cat catboii
 
 sleep 5
 
-if [[ -v "$APT" ]] ; then
+if [ -f "$APT" ] ; then
      echo -e "your on debian type system with apt"
      echo -e "starting"
 
@@ -18,7 +17,6 @@ echo "|                                                 |"
 echo "             Namaste : $(whoami)                   "
 echo "|                                                 |"
 echo "--------------------------------------------------"
-
 sleep 2
 
 echo "--------------------------------------------------"
@@ -42,7 +40,7 @@ sleep 2
 
 
 echo -e "\e[1;32m Step 1: Updating packages \e[0m"
-sudo apt update
+sudo apt update -y
 
 echo
 
