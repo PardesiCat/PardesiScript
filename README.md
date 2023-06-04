@@ -1,3 +1,6 @@
+
+# **ATTENTION FOR UPDATE OR ERROR FREE DO FROM MY SELFHOST GIT SERVER GITHUB PROBALLY OUTDATED OR NOT MAINTEN [Pardesicat-git](https://git.pardesicat.xyz/pardesicat/PardesiScript) **
+
 ## Linux Update script
 
 A bash script writted by [Pardesi Cat ](https://pardesicat.xyz)for easy update/upgrade the linux system
