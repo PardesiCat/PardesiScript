@@ -6,7 +6,9 @@ APT="/usr/bin/apt"
 RED='\e[31m'
 BLUE='\e[34m'
 PURPLE='\e[35m'
+PURPLEB='\e[1;35m'
 REDB='\e[1;31m'
+CEND='\e[0m'
 
 os () {
     cat /etc/os-release
@@ -18,15 +20,16 @@ cat catboii
 sleep 5
 
 if [ -f "$APT" ] ; then
-     echo -e "${BLUE}your on debian type system with apt"
-     echo -e "${BLUE}starting"
+     echo -e "${BLUE}you are on debian type system with apt"
+     echo
+     echo -e "${BLUE}starting${CEND}"
+     echo
 
-
-echo "-------------------------------------------------"
-echo "|                                                 |"
-echo "             Namaste : ${PURPLE}$(whoami)          "
-echo "|                                                 |"
-echo "--------------------------------------------------"
+echo -e "--------------------------------------------------"
+echo -e "|                                                 |"
+echo -e "          Namaste : ${PURPLEB}$(whoami)${CEND}      "
+echo -e "|                                                 |"
+echo -e "--------------------------------------------------"
 sleep 2
 
 echo "--------------------------------------------------"
@@ -38,7 +41,7 @@ sleep 5
 echo "              checking Your system Info          "
 sleep 2
 echo "========================================================================"
-${PURPLE}uname -a
+uname -a
 echo "========================================================================"
 sleep 5
 
@@ -72,17 +75,17 @@ sudo apt autoremove -y
 
 sleep 5
 
-echo "--------------------------------------------------"
-echo "                ....Done....                      "
-echo "--------------------------------------------------"
+echo -e "--------------------------------------------------"
+echo -e "              ${REDB}....Done....${CEND}                   "
+echo -e "--------------------------------------------------"
 
 sleep 5
 
 exit
 
 else 
-	echo -e "${PURPLE}your on other system"
-	echo -e "__________________________________"
+	echo -e "${PURPLE}your on other system${CEND}"
+	echo -e "${BLUE}__________________________________"
 	os
 	echo -e "__________________________________"
 	echo -e "${REDB}closing script"
