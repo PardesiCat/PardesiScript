@@ -73,7 +73,15 @@ sudo apt clean -y
 sudo apt autoclean -y
 sudo apt autoremove -y
 
+echo
+
+echo -e "\e[1;32m Final Step: Final upgrade \e[0m"
+
+sudo apt update -y
+sudo apt upgrade -y
+
 sleep 5
+
 
 echo -e "--------------------------------------------------"
 echo -e "              ${REDB}....Done....${CEND}                   "
