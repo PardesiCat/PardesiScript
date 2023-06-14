@@ -20,8 +20,13 @@ git clone https://git.pardesicat.xyz/pardesicat/PardesiScript.git
 ```copy 
 cd PardesiScript
 ```
+3. <u>Execute Permission</u>
 
-3. <u>Run the bash script</u>
+```copy
+chmod +x pardesicat.sh
+```
+
+4. <u>Run the bash script</u>
 
 ```copy 
 bash pardesicat.sh
