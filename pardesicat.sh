@@ -1,7 +1,8 @@
 #!writted by Pardesi_Cat
 #!/bin/bash/ 
 
-APT="/usr/bin/apt"
+APTT="/usr/bin/apt"
+
 
 RED='\e[31m'
 BLUE='\e[34m'
@@ -15,15 +16,42 @@ os () {
 }
 
 
+checkc () {
+if [ -d /var/cache/apt ]; then
+       sudo rm -rf /var/cache/apt/*
+       sleep 1
+fi
+}
+
+checka () {
+
+if ! command -v apt &> /dev/null ; then
+
+	echo -e "${PURPLE}your on other system${CEND}"
+	echo -e "${BLUE}__________________________________"
+	os
+	echo -e "__________________________________"
+	echo -e "${REDB}closing script"
+	exit 0
+
+
+else
+     echo -e "${BLUE}you are on Debian type system with Apt"
+     echo
+     echo -e "${BLUE}starting${CEND}"
+     echo
+fi
+}
+
+
 cat catboii
 
 sleep 5
 
-if [ -f "$APT" ] ; then
-     echo -e "${BLUE}you are on debian type system with apt"
-     echo
-     echo -e "${BLUE}starting${CEND}"
-     echo
+# main works
+
+checkc
+checka
 
 echo -e "--------------------------------------------------"
 echo -e "|                                                 |"
@@ -35,6 +63,7 @@ sleep 2
 echo "--------------------------------------------------"
 echo " This is simple Bash script written by Pardesicat "
 echo "    To update and clean ur system single cmd      "
+echo "  also can be used with cronjob for autoupdates.  "
 echo "--------------------------------------------------"
 
 sleep 5
@@ -42,15 +71,20 @@ echo "              checking Your system Info          "
 sleep 2
 echo "========================================================================"
 uname -a
+echo -e "------------"
+timedatectl
 echo "========================================================================"
 sleep 5
 
 sleep 5
 
+echo
+
 echo "starting.........................................."  
 
 sleep 2
 
+checkc
 
 echo -e "\e[1;32m Step 1: Updating packages \e[0m"
 sudo apt update -y
@@ -73,15 +107,15 @@ sudo apt clean -y
 sudo apt autoclean -y
 sudo apt autoremove -y
 
-echo
-
-echo -e "\e[1;32m Final Step: Final upgrade \e[0m"
-
-sudo apt update -y
-sudo apt upgrade -y
+checkc
 
 sleep 5
 
+echo
+
+echo -e "\e[1;32m final step: final upgrade \e[0m"
+sudo apt update -y
+sudo apt upgrade -y
 
 echo -e "--------------------------------------------------"
 echo -e "              ${REDB}....Done....${CEND}                   "
@@ -90,14 +124,3 @@ echo -e "--------------------------------------------------"
 sleep 5
 
 exit
-
-else 
-	echo -e "${PURPLE}your on other system${CEND}"
-	echo -e "${BLUE}__________________________________"
-	os
-	echo -e "__________________________________"
-	echo -e "${REDB}closing script"
-	exit 0
-
-
- fi
