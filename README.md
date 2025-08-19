@@ -1,6 +1,3 @@
-
-# **ATTENTION FOR UPDATE OR ERROR FREE DO FROM MY SELFHOST GIT SERVER GITHUB PROBALLY OUTDATED OR NOT MAINTEN [Pardesicat-git](https://git.pardesicat.xyz/pardesicat/PardesiScript) **
-
 ## Linux Update script
 
 A bash script writted by [Pardesi Cat ](https://pardesicat.xyz)for easy update/upgrade the linux system
@@ -9,11 +6,15 @@ Linux Bash script for auto update in Debian Based distro + server
 
  ## **To use this script  simply follow these steps**
 
-1. <u>Clone the update script from my selfhost git server</u>
+1. <u>Clone the update script from github or codeberg server</u>
 
 ```copy 
 git clone https://git.pardesicat.xyz/pardesicat/PardesiScript.git
 ```
+```copy 
+git clone https://codeberg.org/PardesiCat/PardesiScript.git
+```
+
 
 2. <u>Goto that directory</u> 
 
@@ -29,7 +30,7 @@ chmod +x pardesicat.sh
 4. <u>Run the bash script</u>
 
 ```copy 
-bash pardesicat.sh
+./pardesicat.sh
 ```
 
 > [!Attention] 

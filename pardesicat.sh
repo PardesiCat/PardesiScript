@@ -1,5 +1,5 @@
-#!writted by Pardesi_Cat
 #!/bin/bash/ 
+#!writted by Pardesi_Cat
 
 APTT="/usr/bin/apt"
 
