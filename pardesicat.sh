@@ -1,5 +1,5 @@
-#!/bin/bash/ 
-#!writted by Pardesi_Cat
+#!/bin/bash
+#!writted by Pardesi_Cat < contact@pardesicat.xyz >
 
 APTT="/usr/bin/apt"
 
@@ -42,9 +42,19 @@ else
      echo
 fi
 }
+cat <<'EOF'
+
+               ____               _           _     ____      _   
+              |  _ \ __ _ _ __ __| | ___  ___(_)   / ___|__ _| |_ 
+              | |_) / _` | '__/ _` |/ _ \/ __| |  | |   / _` | __|
+              |  __/ (_| | | | (_| |  __/\__ \ |  | |__| (_| | |_ 
+              |_|   \__,_|_|  \__,_|\___||___/_|___\____\__,_|\__|
+                                              |_____|             
 
 
-cat catboii
+ Website :                                             https://pardesicat.xyz
+
+EOF
 
 sleep 5
 
